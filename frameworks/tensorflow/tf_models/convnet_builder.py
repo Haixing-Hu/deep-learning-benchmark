@@ -21,13 +21,14 @@ import contextlib
 
 import numpy as np
 
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 from tensorflow.python.layers import convolutional as conv_layers
 from tensorflow.python.layers import core as core_layers
 from tensorflow.python.layers import pooling as pooling_layers
 from tensorflow.python.training import moving_averages
-
 
 class ConvNetBuilder(object):
   """Builder of cnn net."""

@@ -4,7 +4,9 @@ import numpy as np
 
 from frameworks.tensorflow.tf_models import resnet_model, vgg_model
 from frameworks.tensorflow.tf_models import convnet_builder
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 class tensorflow_base:
 

@@ -33,7 +33,9 @@ References:
 
 import numpy as np
 from six.moves import xrange  # pylint: disable=redefined-builtin
-import tensorflow as tf
+#import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 from frameworks.tensorflow.tf_models import model as model_lib
 
 
